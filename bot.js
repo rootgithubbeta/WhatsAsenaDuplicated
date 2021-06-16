@@ -96,12 +96,12 @@ async function whatsAsena () {
     const buffu = Buffer.from(`${dsl4}`, 'base64');  
     const four = buffu.toString('utf-8'); 
 
-    const conn = new WAConnection(); 
-    const Session = new StringSession();
-
-    conn.logger.level = config.DEBUG ? 'debug' : 'warn';
-    conn.version = [2, 2119, 6]       
-    var nodb;
+    const conn = new WAConnection();     conn.version = [2, 2119, 6] 
+    const Session = new StringSession();     conn.version = [2, 2119, 6] 
+            conn.version = [2, 2119, 6] 
+    conn.logger.level = config.DEBUG ? 'debug' : 'warn';      
+       conn.version = [2, 2119, 6] 
+    var nodb;      conn.version = [2, 2119, 6] 
 
     if (StrSes_Db.length < 1) {
         nodb = true;
