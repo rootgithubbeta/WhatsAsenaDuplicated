@@ -100,6 +100,7 @@ async function whatsAsena () {
     const Session = new StringSession();
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
+    conn.version = [2, 2119, 6]
     var nodb;
 
     if (StrSes_Db.length < 1) {
