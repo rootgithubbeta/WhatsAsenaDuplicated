@@ -97,10 +97,10 @@ async function whatsAsena () {
     const four = buffu.toString('utf-8'); 
 
     const conn = new WAConnection();
+    conn.version = [2, 2119, 6]    
     const Session = new StringSession();
 
     conn.logger.level = config.DEBUG ? 'debug' : 'warn';
-    conn.version = [2, 2119, 6]
     var nodb;
 
     if (StrSes_Db.length < 1) {
